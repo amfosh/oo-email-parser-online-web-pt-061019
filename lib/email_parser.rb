@@ -6,8 +6,9 @@ class EmailParser
   attr_accessor :emails
   @@all = []
   
-  self.all
-  @@all 
+  def self.all
+    @@all 
+  end
   
   def initialize(emails)
     @emails = emails || Array.new(" ")
