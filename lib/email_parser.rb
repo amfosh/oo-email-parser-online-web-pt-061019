@@ -7,6 +7,7 @@ class EmailParser
   @@all = []
   
   self.all
+  @@all 
   
   def initialize(emails)
     @emails = emails || Array.new(" ")
