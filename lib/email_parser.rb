@@ -15,5 +15,3 @@ class EmailParser
     email.uniq!
   end
  end 
-end
-  
