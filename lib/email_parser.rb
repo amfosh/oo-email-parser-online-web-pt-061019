@@ -10,8 +10,7 @@ class EmailParser
   end
   
   def parse(emails)
-    parsed_e = self.create
-    parsed_e = emails.split("," || " ").chomp(" ")
+    parsed_e = @emails.split("," || " ").chomp(" ")
     emails
  end 
 end
