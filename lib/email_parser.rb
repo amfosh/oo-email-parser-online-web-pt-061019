@@ -13,6 +13,7 @@ class EmailParser
     email = @emails.split(/[,\s]/)
     email.delete if {|string| string.empty?}
     email.uniq
+  end
  end 
 end
   
