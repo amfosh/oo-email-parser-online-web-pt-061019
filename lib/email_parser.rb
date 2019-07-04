@@ -10,8 +10,9 @@ class EmailParser
   end
   
   def parse(emails)
-    parsed_e = @emails.split(/[,\s]/)
-    parsed_e
+    email = @emails.split(/[,\s]/)
+    email.delete if {|string| string.empty?}
+    email.uniq
  end 
 end
   
