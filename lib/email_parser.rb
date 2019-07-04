@@ -9,7 +9,10 @@ class EmailParser
     @emails = emails || Array.new(" ")
   end
   
-  def parse
-    email.each do 
+  def parse(emails)
+    parsed_e = self.create
+    parsed_e = emails.split("," || " ").chomp(" ")
+    emails
+ end 
 end
   
